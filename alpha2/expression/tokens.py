@@ -149,7 +149,7 @@ operand_tokens = [ConstToken(value=v, s = str(v.value)) for v in scalar_operands
 null_token_idx = operand_tokens.index(null_token)
 START_FINISH_TOKENS = [start_token, finish_token]
 operator_tokens = UNARY_OP_TOKENS + BINARY_OP_TOKENS + TERNARY_OP_TOKENS + START_FINISH_TOKENS 
-start_token_idx = len(operator_tokens) -3
-finish_token_idx = len(operator_tokens) -2
+start_token_idx = len(operator_tokens) - 2
+finish_token_idx = len(operator_tokens) - 1
 NUM_OPERATORS = len(operator_tokens)
 NUM_OPERANDS = len(operand_tokens)
